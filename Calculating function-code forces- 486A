@@ -1,0 +1,20 @@
+//if n is odd total sum is negative ,otherwise sum is positive . 
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+      long long int n,l ;
+      scanf("%lld",&n);
+      if(n%2==0)//all even number sum is (n*n+n ) and odd number sum is n*n .
+      {
+            printf("%lld",n/2);// so substract is "n" . 
+      }
+      else
+      {
+            l= (n/2)+1;
+            printf("%lld",l*(-1));
+
+      }
+      return 0 ;
+}
